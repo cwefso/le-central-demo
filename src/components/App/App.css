@@ -18,13 +18,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
   background-image: url('/Users/cwefso/projects/le-central/src/assets/le-central-background.jpg');
   background-repeat: no-repeat;
   background-size: 1600px, 1066.25px;
+  z-index: -1;
 }
 
 .App-link {

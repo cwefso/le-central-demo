@@ -1,0 +1,31 @@
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: absolute;
+  background-color: #356d93;
+  opacity: 85%;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-left: 5vw;
+  width: 50vw;
+  color: #cce6f7;
+  height: 20vh;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+  color: #cce6f7;
+  height: 20vh;
+}
