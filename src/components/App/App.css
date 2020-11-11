@@ -22,6 +22,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url('/Users/cwefso/projects/le-central/src/assets/le-central-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 1600px, 1066.25px;
 }
 
 .App-link {
