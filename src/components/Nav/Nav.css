@@ -8,11 +8,12 @@ nav {
   position: absolute;
   width: 100vw;
   overflow: none;
+  box-shadow: 1px 1px 1px #21445c;
 }
 
 .nav-logo {
   align-items: end;
-  color: #cce6f7;
+  color: #fffaef;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,22 +24,28 @@ nav {
 }
 
 .logo {
-  font-size: 4em;
+  font-size: 4.5em;
+  text-shadow: 2px 2px 2px black;
 }
 
 .subtext {
   display: flex;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+  margin-left: 1.5vw;
+  margin-bottom: .5em;
 }
 
 .links {
   align-items: center;
-  color: #cce6f7;
+  color: #fffaef;
   display: flex;
   flex-direction: row;
   font-family: 'Roboto Condensed', sans-serif;
   height: 20vh;
   justify-content: space-evenly;
   width: 50vw;
+  text-shadow: 1px 1px 1px black;
 }
 
 .links a {
