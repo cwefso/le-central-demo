@@ -1,0 +1,19 @@
+.menu-page {
+	color: black;
+	display: flex;
+	flex-direction: column;
+	min-height: 70vh;
+	justify-content: center;
+	align-items: center;
+	min-width: 65vw;
+  overflow-y: scroll;
+}
+
+.menu {
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  height: 70vh;
+  width: 65vh;
+}

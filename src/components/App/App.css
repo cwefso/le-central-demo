@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -24,7 +28,7 @@
   color: white;
   background-image: url('/Users/cwefso/projects/le-central/src/assets/le-central-background.jpg');
   background-repeat: no-repeat;
-  background-size: 1600px, 1066.25px;
+  background-size: 100vw, 100vh;
   z-index: -1;
 }
 

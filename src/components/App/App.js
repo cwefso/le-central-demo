@@ -3,9 +3,10 @@ import { Switch, Route, Link, NavLink } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import Card from "../Card/Card";
 import Home from "../Home/Home";
+import Menu from "../Menu/Menu";
+import AboutUs from "../AboutUs/AboutUs";
 
 function App() {
-
 	return (
 		<Switch>
 			<Route
@@ -16,7 +17,7 @@ function App() {
 						<div className="App">
 							<Nav />
 							<header className="App-header">
-								<p>Menu</p>
+								<Card content={<Menu />} />
 							</header>
 						</div>
 					);
@@ -30,7 +31,7 @@ function App() {
 						<div className="App">
 							<Nav />
 							<header className="App-header">
-								<p>About Us</p>
+								<Card content={<AboutUs />} />
 							</header>
 						</div>
 					);
@@ -44,7 +45,7 @@ function App() {
 						<div className="App">
 							<Nav />
 							<header className="App-header">
-								<Card content={<Home />}/>
+								<Card content={<Home />} />
 							</header>
 						</div>
 					);
