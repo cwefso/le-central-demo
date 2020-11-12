@@ -2,16 +2,9 @@ import "./App.css";
 import { Switch, Route, Link, NavLink } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import Card from "../Card/Card";
+import Home from "../Home/Home";
 
 function App() {
-  const main = <section className="main">
-    <section className="greeting">
-      Bienvenue
-      <section className="covid">Due to Covid-19, our dining room is currently closed. We have expanded our outdoor dining options, but a reservation will be required until further notice. Merci pour votre compréhension.</section>
-    </section>
-    <span></span>
-    <section className="info">Info</section>
-  </section>
 
 	return (
 		<Switch>
@@ -51,7 +44,7 @@ function App() {
 						<div className="App">
 							<Nav />
 							<header className="App-header">
-								<Card content={main}/>
+								<Card content={<Home />}/>
 							</header>
 						</div>
 					);
