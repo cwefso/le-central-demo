@@ -1,18 +1,20 @@
 .main {
   align-items: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-areas:
+  "greeting hours"
+  "greeting contact";
   height: 70vh;
   justify-content: space-evenly;
   overflow: auto;
 }
 
-.greeting, .info, span {
+.greeting, .info, .hours, .contact {
   color: black;
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   width: 25vw;
   overflow: auto;
 }
@@ -27,11 +29,13 @@ span {
   font-size: 250%;
   padding: 1px 1px 1px 1px;
   font-style: italic;
+  grid-area: greeting;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Parisienne', cursive;
+  width: 25vw;
 }
 
 .covid, p {
@@ -40,17 +44,22 @@ h2 {
   font-style: normal;
   margin-block-end: 0em;
   margin-block-start: 0em;
-}
-
-.hours, .info {
-  display: flex;
-  flex-direction: column;
-  font-size: 100%;
+  width: 25vw;
 }
 
 .hours {
-  border-bottom: 1px solid black;
-  padding-bottom: 1em;
+  grid-area: hours;
+  width: 30vw;
+  justify-content: flex-end;
+}
+
+.contact {
+  grid-area: contact;
+  width: 30vw;
+}
+
+.info {
+  width: 30vw;
 }
 
 @media screen and (max-width: 760px) {
