@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Home.css";
 import { NavLink } from "react-router-dom";
 
 function Home() {
+
+	const [special, setSpecial] = useState([])
+
+	useEffect(() =>{
+		fetch('http://localhost:1337/specials')
+		.then((res) => res.json())
+		.then((result) => setSpecial(result[result.length - 1]))
+		.catch((err) => console.log(err.message))
+	}, [])
+
 	return (
 		<section className="main">
 			<section className="greeting">
@@ -12,6 +22,12 @@ function Home() {
 					our outdoor dining options, but a reservation will be required until
 					further notice. Merci pour votre compréhension.
 				</section>
+			</section>
+			<section className="special">
+				<h2>La Spécialité du Jour</h2>
+				<p>{special.name}</p>
+				<p>{special.description}</p>
+				<p>${special.price}</p>
 			</section>
 			<span></span>
 			<section className="info">
