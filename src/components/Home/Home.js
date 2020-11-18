@@ -7,7 +7,7 @@ function Home() {
 	const [special, setSpecial] = useState([])
 
 	useEffect(() =>{
-		fetch('http://localhost:1337/specials')
+		fetch('https://le-central-backend.herokuapp.com/specials')
 		.then((res) => res.json())
 		.then((result) => setSpecial(result[result.length - 1]))
 		.catch((err) => console.log(err.message))
