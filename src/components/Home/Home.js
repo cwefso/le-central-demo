@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
-import "./Home.css";
-import { NavLink } from "react-router-dom";
+// import "./Home.css";
 
 function Home() {
 
@@ -23,12 +22,20 @@ function Home() {
 					further notice. Merci pour votre compréhension.
 				</section>
 			</section>
-			<section className="special">
+			{special &&
+							<section className="special">
+							<h2>La Spécialité du Jour</h2>
+							<p>{special.name}</p>
+							<p>{special.description}</p>
+							<p>${special.price}</p>
+						</section>
+			}
+			{!special &&
+				<section className="special">
 				<h2>La Spécialité du Jour</h2>
-				<p>{special.name}</p>
-				<p>{special.description}</p>
-				<p>${special.price}</p>
+				<p>special not available</p>
 			</section>
+			}
 			<span></span>
 			<section className="info">
 				<section className="hours">
