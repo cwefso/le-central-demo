@@ -26,23 +26,23 @@ This project was bootstrapped with Create React App and uses a Strapi admin pane
   This page is built with React, but the interesting part is the Strapi backend (https://github.com/cwefso/le-central-backend). This admin panel allows the restaurant owner to simply add a new daily special with no knowledge of JavaScript, and see the page dynamically rerender with the new information.
 
 
-[Main Page](https://i.imgur.com/Cmmfaoe.png?1)
+![Main Page](https://i.imgur.com/Cmmfaoe.png?1)
 
   Upon loading the application, our user will see the most recent special and be able to see a menu and an about page. 
   
-[Admin Panel]()
+![Admin Panel](https://i.imgur.com/WvYq7Gg.png?1)
 
   This interface allows an admin to update the backend endpoints with no knowledge of the code that is working behind the scenes.
 
-[Updated]()
+![Updated](https://i.imgur.com/2GrulNQ.png?1)
 
   Once the admin has added a new special, that will appear on the page automatically.
 
 Future plans:
 
--[] Testing with Cypress
--[] Fully updatable Menu
--[] Endpoints for Hours/Greeting
+- Testing with Cypress
+- Fully updatable Menu
+- Endpoints for Hours/Greeting
 
 ## Technologies Used
   - React
